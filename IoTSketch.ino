@@ -11,10 +11,10 @@
 
 
 //Data for get connected to the Wi-Fi and Blynk
-char auth[] = "bJInzW7qvPcRDDUAGxg3GTGK47k7MKs-"; //Enter the Auth code which was send by Blink
+char auth[] = "blinkauthcode-"; //Enter the Auth code which was send by Blink
 char* WiFi_hostname = "dya-like-jazz"; //device local hostname
-char ssid[] = "Oldfield WIFI";  //Enter your WIFI Name
-char pass[] = "woodsideso249sf";  //Enter your WIFI Password
+char ssid[] = "wifiname";  //Enter your WIFI Name
+char pass[] = "wifipassword";  //Enter your WIFI Password
 bool tempExceedNotifSent = false; //boolean operator to stop the spam of IFTTT notications 
 
 
@@ -25,7 +25,7 @@ bool tempExceedNotifSent = false; //boolean operator to stop the spam of IFTTT n
 #define DHTTYPE DHT11     // DHT 11
 DHT dht(DHTPIN, DHTTYPE);
 SimpleTimer timer;
-#define IFTTT_API_KEY "bKQTgM0euJ98RaFQKI8HEa"
+#define IFTTT_API_KEY "ifttapikey"
 #define IFTTT_EVENT "ESP_DHT"
 //Declare the MQ135 Sensor
 #define placa "esp8266"
